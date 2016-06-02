@@ -36,7 +36,7 @@ group :production, :test do
 end
 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'sqlite3', '1.3.10'
   gem 'sqlite3-ruby', :require => 'sqlite3' 
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
