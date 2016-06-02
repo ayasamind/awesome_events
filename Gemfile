@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.0.beta2'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
+gem 'sqlite3', groups: %w(test development), require: false
+gem 'pg', groups: %w(production), require: false
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0.0.beta1'
 # Use Uglifier as compressor for JavaScript assets
@@ -31,13 +33,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-group :production, :test do
-  gem 'pg'
-end
 
 group :development, :test do
-  gem 'sqlite3', '1.3.10'
-  gem 'sqlite3-ruby', :require => 'sqlite3' 
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   
