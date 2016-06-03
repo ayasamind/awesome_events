@@ -439,3 +439,30 @@ Started GET "/" for 10.240.0.213 at 2016-06-03 16:37:45 +0000
 Processing by WelcomeController#index as HTML
   Rendered welcome/index.html.erb within layouts/application (0.1ms)
 Completed 200 OK in 38ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.212 at 2016-06-03 16:42:54 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 366ms (Views: 352.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/twitter" for 10.240.0.211 at 2016-06-03 16:42:56 +0000
+
+
+Started GET "/auth/twitter" for 10.240.0.230 at 2016-06-03 16:42:58 +0000
+
+
+Started GET "/auth/twitter/callback?oauth_token=gYvSlAAAAAAAvfD5AAABVRcldWo&oauth_verifier=X5yQDjpOp4BHcH0fH504TGi0zJBTQAPh" for 10.240.0.213 at 2016-06-03 16:43:03 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"gYvSlAAAAAAAvfD5AAABVRcldWo", "oauth_verifier"=>"X5yQDjpOp4BHcH0fH504TGi0zJBTQAPh", "provider"=>"twitter"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? LIMIT 1  [["provider", "twitter"], ["uid", "146005103"]]
+Redirected to http://ruby-practice-ayasamind.c9users.io:8080/
+Completed 302 Found in 30ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 10.240.0.230 at 2016-06-03 16:43:05 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.0ms)
