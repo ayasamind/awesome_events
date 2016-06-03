@@ -598,3 +598,593 @@ Started GET "/" for 10.240.0.136 at 2016-06-03 17:41:56 +0000
 Processing by WelcomeController#index as HTML
   Rendered welcome/index.html.erb within layouts/application (0.1ms)
 Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.230 at 2016-06-03 17:44:19 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 308ms (Views: 293.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.240 at 2016-06-03 17:44:19 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 10.240.0.230 at 2016-06-03 17:44:19 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.136 at 2016-06-03 17:44:19 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.214 at 2016-06-03 17:44:19 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 10.240.0.212 at 2016-06-03 17:44:19 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.240.0.240 at 2016-06-03 17:44:19 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 10.240.0.211 at 2016-06-03 17:44:19 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.136 at 2016-06-03 17:44:20 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.230 at 2016-06-03 17:44:20 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.136 at 2016-06-03 17:44:20 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 10.240.0.214 at 2016-06-03 17:44:20 +0000
+
+
+Started GET "/" for 10.240.0.213 at 2016-06-03 17:53:15 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 81ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.213 at 2016-06-03 17:53:16 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.212 at 2016-06-03 17:53:16 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 10.240.0.213 at 2016-06-03 17:53:16 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 10.240.0.214 at 2016-06-03 17:53:16 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 10.240.0.136 at 2016-06-03 17:53:16 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.240.0.230 at 2016-06-03 17:53:16 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.157 at 2016-06-03 17:53:16 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.212 at 2016-06-03 17:53:16 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.213 at 2016-06-03 17:53:16 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.214 at 2016-06-03 17:53:16 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 10.240.0.213 at 2016-06-03 17:53:16 +0000
+
+
+Started GET "/" for 10.240.0.212 at 2016-06-03 17:53:54 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 56ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.212 at 2016-06-03 17:53:55 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.212 at 2016-06-03 17:53:55 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 10.240.0.212 at 2016-06-03 17:53:55 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.213 at 2016-06-03 17:53:55 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 10.240.0.214 at 2016-06-03 17:53:55 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 10.240.0.230 at 2016-06-03 17:53:55 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.240.0.136 at 2016-06-03 17:53:55 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.212 at 2016-06-03 17:53:55 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.213 at 2016-06-03 17:53:55 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 10.240.0.214 at 2016-06-03 17:53:55 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.212 at 2016-06-03 17:53:55 +0000
+
+
+Started GET "/" for 10.240.0.212 at 2016-06-03 17:54:40 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 152ms (Views: 151.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.212 at 2016-06-03 17:54:41 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 10.240.0.212 at 2016-06-03 17:54:41 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 10.240.0.212 at 2016-06-03 17:54:41 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.213 at 2016-06-03 17:54:41 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.213 at 2016-06-03 17:54:41 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 10.240.0.214 at 2016-06-03 17:54:41 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.240.0.212 at 2016-06-03 17:54:41 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.212 at 2016-06-03 17:54:41 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.212 at 2016-06-03 17:54:41 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.213 at 2016-06-03 17:54:41 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 10.240.0.212 at 2016-06-03 17:54:41 +0000
+
+
+Started GET "/auth/twitter" for 10.240.0.213 at 2016-06-03 17:54:45 +0000
+
+
+Started GET "/auth/twitter" for 10.240.0.213 at 2016-06-03 17:54:46 +0000
+
+
+Started GET "/auth/twitter/callback?oauth_token=IvGZHgAAAAAAvfD5AAABVRdnNFc&oauth_verifier=PjjF2NgzehEM04oGlq3DRt9jPUh5mi0x" for 10.240.0.212 at 2016-06-03 17:54:52 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"IvGZHgAAAAAAvfD5AAABVRdnNFc", "oauth_verifier"=>"PjjF2NgzehEM04oGlq3DRt9jPUh5mi0x", "provider"=>"twitter"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? LIMIT 1  [["provider", "twitter"], ["uid", "146005103"]]
+Redirected to http://ruby-practice-ayasamind.c9users.io:8080/
+Completed 302 Found in 34ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 10.240.0.212 at 2016-06-03 17:54:54 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 51ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.211 at 2016-06-03 17:56:33 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 135ms (Views: 133.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.136 at 2016-06-03 17:56:33 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 10.240.0.211 at 2016-06-03 17:56:33 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.136 at 2016-06-03 17:56:33 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.213 at 2016-06-03 17:56:33 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 10.240.0.212 at 2016-06-03 17:56:33 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 10.240.0.213 at 2016-06-03 17:56:33 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.240.0.211 at 2016-06-03 17:56:33 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.136 at 2016-06-03 17:56:33 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.213 at 2016-06-03 17:56:33 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.136 at 2016-06-03 17:56:33 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 10.240.0.211 at 2016-06-03 17:56:33 +0000
+
+
+Started GET "/auth/twitter" for 10.240.0.211 at 2016-06-03 17:56:35 +0000
+
+
+Started GET "/auth/twitter" for 10.240.0.213 at 2016-06-03 17:56:36 +0000
+
+
+Started GET "/auth/twitter/callback?oauth_token=fLX7SAAAAAAAvfD5AAABVRdo4ZY&oauth_verifier=YRIGnJZIf4lRVUVd5m5gNNzdT60WGG7j" for 10.240.0.136 at 2016-06-03 17:56:38 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"fLX7SAAAAAAAvfD5AAABVRdo4ZY", "oauth_verifier"=>"YRIGnJZIf4lRVUVd5m5gNNzdT60WGG7j", "provider"=>"twitter"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? LIMIT 1[0m  [["provider", "twitter"], ["uid", "146005103"]]
+Redirected to http://ruby-practice-ayasamind.c9users.io:8080/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 10.240.0.213 at 2016-06-03 17:56:40 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 104ms (Views: 103.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.211 at 2016-06-03 17:56:55 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 73ms (Views: 72.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.213 at 2016-06-03 17:56:55 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.213 at 2016-06-03 17:56:55 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 10.240.0.213 at 2016-06-03 17:56:55 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 10.240.0.136 at 2016-06-03 17:56:55 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.211 at 2016-06-03 17:56:56 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 10.240.0.212 at 2016-06-03 17:56:56 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.240.0.157 at 2016-06-03 17:56:56 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.213 at 2016-06-03 17:56:56 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.211 at 2016-06-03 17:56:56 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.213 at 2016-06-03 17:56:56 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 10.240.0.212 at 2016-06-03 17:56:56 +0000
+
+
+Started GET "/auth/twitter" for 10.240.0.211 at 2016-06-03 17:56:57 +0000
+
+
+Started GET "/auth/twitter" for 10.240.0.211 at 2016-06-03 17:56:58 +0000
+
+
+Started GET "/auth/twitter/callback?oauth_token=CoL2ZQAAAAAAvfD5AAABVRdpNbE&oauth_verifier=t1rgCSdyCng6CcvtnWiH9gs6gn4PLEhJ" for 10.240.0.213 at 2016-06-03 17:57:03 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"CoL2ZQAAAAAAvfD5AAABVRdpNbE", "oauth_verifier"=>"t1rgCSdyCng6CcvtnWiH9gs6gn4PLEhJ", "provider"=>"twitter"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? LIMIT 1  [["provider", "twitter"], ["uid", "146005103"]]
+Redirected to http://ruby-practice-ayasamind.c9users.io:8080/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 10.240.0.211 at 2016-06-03 17:57:05 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 61ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.136 at 2016-06-03 17:57:55 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 60ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.211 at 2016-06-03 17:57:55 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.136 at 2016-06-03 17:57:56 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 10.240.0.211 at 2016-06-03 17:57:56 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 10.240.0.240 at 2016-06-03 17:57:56 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 10.240.0.212 at 2016-06-03 17:57:56 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.213 at 2016-06-03 17:57:56 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.240.0.211 at 2016-06-03 17:57:56 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.136 at 2016-06-03 17:57:56 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.211 at 2016-06-03 17:57:56 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.136 at 2016-06-03 17:57:56 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 10.240.0.211 at 2016-06-03 17:57:56 +0000
+
+
+Started GET "/auth/twitter" for 10.240.0.211 at 2016-06-03 17:57:58 +0000
+
+
+Started GET "/auth/twitter" for 10.240.0.211 at 2016-06-03 17:57:59 +0000
+
+
+Started GET "/auth/twitter/callback?oauth_token=VVxiGQAAAAAAvfD5AAABVRdqIzM&oauth_verifier=VNnJwqBEGszgc0Mr9uvnDD3G9ZGgwiOX" for 10.240.0.213 at 2016-06-03 17:58:02 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"VVxiGQAAAAAAvfD5AAABVRdqIzM", "oauth_verifier"=>"VNnJwqBEGszgc0Mr9uvnDD3G9ZGgwiOX", "provider"=>"twitter"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? LIMIT 1[0m  [["provider", "twitter"], ["uid", "146005103"]]
+Redirected to http://ruby-practice-ayasamind.c9users.io:8080/
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 10.240.0.211 at 2016-06-03 17:58:04 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 60ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.136 at 2016-06-03 17:59:14 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 71ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.240 at 2016-06-03 17:59:14 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 10.240.0.136 at 2016-06-03 17:59:14 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 10.240.0.240 at 2016-06-03 17:59:14 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.230 at 2016-06-03 17:59:14 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.211 at 2016-06-03 17:59:14 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 10.240.0.213 at 2016-06-03 17:59:14 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.240.0.214 at 2016-06-03 17:59:14 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.136 at 2016-06-03 17:59:14 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.240 at 2016-06-03 17:59:14 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.230 at 2016-06-03 17:59:14 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 10.240.0.211 at 2016-06-03 17:59:14 +0000
+
+
+Started GET "/auth/twitter" for 10.240.0.230 at 2016-06-03 17:59:16 +0000
+
+
+Started GET "/auth/twitter" for 10.240.0.230 at 2016-06-03 17:59:17 +0000
+
+
+Started GET "/auth/twitter/callback?oauth_token=6zaW5AAAAAAAvfD5AAABVRdrVcs&oauth_verifier=ulWxdRxL7pTjSIjjMn2VRZUxVU0BphUC" for 10.240.0.211 at 2016-06-03 17:59:19 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"6zaW5AAAAAAAvfD5AAABVRdrVcs", "oauth_verifier"=>"ulWxdRxL7pTjSIjjMn2VRZUxVU0BphUC", "provider"=>"twitter"}
+  [1m[35mUser Load (4.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? LIMIT 1  [["provider", "twitter"], ["uid", "146005103"]]
+Redirected to http://ruby-practice-ayasamind.c9users.io:8080/
+Completed 302 Found in 8ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 10.240.0.211 at 2016-06-03 17:59:21 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 62ms (Views: 61.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.136 at 2016-06-03 18:00:16 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 67ms (Views: 65.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.136 at 2016-06-03 18:00:17 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.136 at 2016-06-03 18:00:17 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 10.240.0.136 at 2016-06-03 18:00:17 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 10.240.0.240 at 2016-06-03 18:00:17 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.230 at 2016-06-03 18:00:17 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 10.240.0.211 at 2016-06-03 18:00:17 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.240.0.136 at 2016-06-03 18:00:17 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.136 at 2016-06-03 18:00:17 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.136 at 2016-06-03 18:00:17 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.240 at 2016-06-03 18:00:17 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 10.240.0.136 at 2016-06-03 18:00:17 +0000
+
+
+Started GET "/auth/twitter" for 10.240.0.230 at 2016-06-03 18:00:18 +0000
+
+
+Started GET "/auth/twitter" for 10.240.0.136 at 2016-06-03 18:00:19 +0000
+
+
+Started GET "/auth/twitter/callback?oauth_token=yQckigAAAAAAvfD5AAABVRdsR_U&oauth_verifier=eR9s50reXwgMOkkSJcJfteYYfupMNk4B" for 10.240.0.136 at 2016-06-03 18:00:21 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"yQckigAAAAAAvfD5AAABVRdsR_U", "oauth_verifier"=>"eR9s50reXwgMOkkSJcJfteYYfupMNk4B", "provider"=>"twitter"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? LIMIT 1[0m  [["provider", "twitter"], ["uid", "146005103"]]
+Redirected to http://ruby-practice-ayasamind.c9users.io:8080/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 10.240.0.136 at 2016-06-03 18:00:23 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 60ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.211 at 2016-06-03 18:01:04 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.211 at 2016-06-03 18:01:05 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.211 at 2016-06-03 18:01:05 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 10.240.0.136 at 2016-06-03 18:01:05 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.240 at 2016-06-03 18:01:05 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 10.240.0.211 at 2016-06-03 18:01:05 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.240.0.213 at 2016-06-03 18:01:05 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 10.240.0.230 at 2016-06-03 18:01:05 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.211 at 2016-06-03 18:01:05 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.211 at 2016-06-03 18:01:05 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.240 at 2016-06-03 18:01:05 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 10.240.0.211 at 2016-06-03 18:01:05 +0000
+
+
+Started GET "/auth/twitter" for 10.240.0.211 at 2016-06-03 18:01:10 +0000
+
+
+Started GET "/auth/twitter" for 10.240.0.211 at 2016-06-03 18:01:11 +0000
+
+
+Started GET "/auth/twitter/callback?oauth_token=AvlFngAAAAAAvfD5AAABVRdtEV0&oauth_verifier=oPUC1gTAWoGsSw4lmOfS1Jw1oUbwyHxH" for 10.240.0.240 at 2016-06-03 18:01:15 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"AvlFngAAAAAAvfD5AAABVRdtEV0", "oauth_verifier"=>"oPUC1gTAWoGsSw4lmOfS1Jw1oUbwyHxH", "provider"=>"twitter"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? LIMIT 1  [["provider", "twitter"], ["uid", "146005103"]]
+Redirected to http://ruby-practice-ayasamind.c9users.io:8080/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 10.240.0.211 at 2016-06-03 18:01:17 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 55ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.213 at 2016-06-03 18:01:42 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 68ms (Views: 66.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.211 at 2016-06-03 18:01:42 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.211 at 2016-06-03 18:01:42 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 10.240.0.211 at 2016-06-03 18:01:43 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 10.240.0.213 at 2016-06-03 18:01:43 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.240 at 2016-06-03 18:01:43 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 10.240.0.230 at 2016-06-03 18:01:43 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.240.0.214 at 2016-06-03 18:01:43 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.211 at 2016-06-03 18:01:43 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.230 at 2016-06-03 18:01:43 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.211 at 2016-06-03 18:01:43 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 10.240.0.213 at 2016-06-03 18:01:43 +0000
+
+
+Started GET "/auth/twitter" for 10.240.0.211 at 2016-06-03 18:01:48 +0000
+
+
+Started GET "/auth/twitter" for 10.240.0.230 at 2016-06-03 18:01:49 +0000
+
+
+Started GET "/auth/twitter/callback?oauth_token=emZ9ogAAAAAAvfD5AAABVRdtqN0&oauth_verifier=Dhgv9oo39uUu3ReR8r5LDspmDwtwds4l" for 10.240.0.240 at 2016-06-03 18:01:52 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"emZ9ogAAAAAAvfD5AAABVRdtqN0", "oauth_verifier"=>"Dhgv9oo39uUu3ReR8r5LDspmDwtwds4l", "provider"=>"twitter"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? LIMIT 1[0m  [["provider", "twitter"], ["uid", "146005103"]]
+Redirected to http://ruby-practice-ayasamind.c9users.io:8080/
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.240.0.211 at 2016-06-03 18:01:54 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.0ms)
