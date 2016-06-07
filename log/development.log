@@ -2016,3 +2016,672 @@ DEPRECATION WARNING: `timestamp` was called without specifying an option for `nu
             FROM sqlite_temp_master
             WHERE name='index_users_on_provider_and_uid' AND type='index'
 
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:26:47 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 546ms (Views: 530.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 122.31.25.186 at 2016-06-07 10:26:48 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 122.31.25.186 at 2016-06-07 10:26:48 +0000
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 122.31.25.186 at 2016-06-07 10:26:48 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 122.31.25.186 at 2016-06-07 10:26:48 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 122.31.25.186 at 2016-06-07 10:26:48 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 122.31.25.186 at 2016-06-07 10:26:48 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 122.31.25.186 at 2016-06-07 10:26:48 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 122.31.25.186 at 2016-06-07 10:26:48 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 122.31.25.186 at 2016-06-07 10:26:48 +0000
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 122.31.25.186 at 2016-06-07 10:26:48 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 122.31.25.186 at 2016-06-07 10:26:48 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 122.31.25.186 at 2016-06-07 10:26:49 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 122.31.25.186 at 2016-06-07 10:26:49 +0000
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:26:56 +0000
+Processing by EventsController#new as HTML
+  Rendered events/new.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 27ms
+
+SyntaxError (/home/ubuntu/workspace/awesome_event/app/views/events/new.html.erb:35: syntax error, unexpected ':', expecting ')'
+..._select :end_time, :start_year: now_year, end_year: now_year...
+...                               ^
+/home/ubuntu/workspace/awesome_event/app/views/events/new.html.erb:40: syntax error, unexpected ';', expecting =>
+...t, class: "form-contorol", row; 10 );@output_buffer.safe_app...
+...                               ^):
+  app/views/events/new.html.erb:35: syntax error, unexpected ':', expecting ')'
+  app/views/events/new.html.erb:40: syntax error, unexpected ';', expecting =>
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (119.6ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:26:57 +0000
+Processing by EventsController#new as HTML
+  Rendered events/new.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 17ms
+
+SyntaxError (/home/ubuntu/workspace/awesome_event/app/views/events/new.html.erb:35: syntax error, unexpected ':', expecting ')'
+..._select :end_time, :start_year: now_year, end_year: now_year...
+...                               ^
+/home/ubuntu/workspace/awesome_event/app/views/events/new.html.erb:40: syntax error, unexpected ';', expecting =>
+...t, class: "form-contorol", row; 10 );@output_buffer.safe_app...
+...                               ^):
+  app/views/events/new.html.erb:35: syntax error, unexpected ':', expecting ')'
+  app/views/events/new.html.erb:40: syntax error, unexpected ';', expecting =>
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (10.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (89.6ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:27:48 +0000
+Processing by EventsController#new as HTML
+  Rendered events/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 11ms
+
+SyntaxError (/home/ubuntu/workspace/awesome_event/app/views/events/new.html.erb:40: syntax error, unexpected ';', expecting =>
+...t, class: "form-contorol", row; 10 );@output_buffer.safe_app...
+...                               ^):
+  app/views/events/new.html.erb:40: syntax error, unexpected ';', expecting =>
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (34.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (123.1ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:28:36 +0000
+Processing by EventsController#new as HTML
+  Rendered events/new.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    4:     <h1>イベント作成</h1>    
+    5: </div>
+    6: 
+    7: <%= form_for(@event, class: 'form-horizontal', role: 'form') do |f| %>
+    8: <% if @event.errors.any? %>
+    9:     <div class="alert alert-danger">
+   10:         <ul>
+  app/views/events/new.html.erb:7:in `_app_views_events_new_html_erb___301303193227652199_70021928859760'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (87.7ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:37:19 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:37:19 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 122.31.25.186 at 2016-06-07 10:37:19 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 122.31.25.186 at 2016-06-07 10:37:19 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 122.31.25.186 at 2016-06-07 10:37:19 +0000
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 122.31.25.186 at 2016-06-07 10:37:19 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 122.31.25.186 at 2016-06-07 10:37:19 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 122.31.25.186 at 2016-06-07 10:37:19 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 122.31.25.186 at 2016-06-07 10:37:19 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 122.31.25.186 at 2016-06-07 10:37:19 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 122.31.25.186 at 2016-06-07 10:37:19 +0000
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 122.31.25.186 at 2016-06-07 10:37:19 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 122.31.25.186 at 2016-06-07 10:37:19 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 122.31.25.186 at 2016-06-07 10:37:19 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 122.31.25.186 at 2016-06-07 10:37:19 +0000
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:37:22 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:37:22 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 57ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:37:26 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:37:27 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:37:30 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:37:30 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:37:35 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:37:35 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:37:38 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:37:38 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 62ms (Views: 61.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:37:40 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:37:40 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 60ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:39:05 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 56ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 122.31.25.186 at 2016-06-07 10:39:05 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 122.31.25.186 at 2016-06-07 10:39:06 +0000
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 122.31.25.186 at 2016-06-07 10:39:06 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:06 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 122.31.25.186 at 2016-06-07 10:39:06 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 122.31.25.186 at 2016-06-07 10:39:06 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:06 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:06 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:06 +0000
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:06 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:06 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:06 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:06 +0000
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:39:07 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:39:07 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 56ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:39:09 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:39:09 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:39:10 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:39:11 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 57ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:39:20 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 47ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 122.31.25.186 at 2016-06-07 10:39:20 +0000
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 122.31.25.186 at 2016-06-07 10:39:20 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:20 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 122.31.25.186 at 2016-06-07 10:39:20 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 122.31.25.186 at 2016-06-07 10:39:20 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 122.31.25.186 at 2016-06-07 10:39:20 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:20 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:20 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:20 +0000
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:20 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:20 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:20 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:20 +0000
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:39:21 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:39:21 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:39:24 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:39:24 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 52ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:39:24 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:39:24 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 55ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:39:39 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 379ms (Views: 359.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 122.31.25.186 at 2016-06-07 10:39:40 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 122.31.25.186 at 2016-06-07 10:39:40 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 122.31.25.186 at 2016-06-07 10:39:40 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:41 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 122.31.25.186 at 2016-06-07 10:39:41 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:41 +0000
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 122.31.25.186 at 2016-06-07 10:39:41 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:41 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:41 +0000
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:41 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:41 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:41 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 122.31.25.186 at 2016-06-07 10:39:41 +0000
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:39:42 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:39:42 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:39:43 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:39:43 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:39:45 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:39:45 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:39:48 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:39:48 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:40:23 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 156ms (Views: 155.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 122.31.25.186 at 2016-06-07 10:40:23 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 122.31.25.186 at 2016-06-07 10:40:23 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 122.31.25.186 at 2016-06-07 10:40:23 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 122.31.25.186 at 2016-06-07 10:40:23 +0000
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 122.31.25.186 at 2016-06-07 10:40:23 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 122.31.25.186 at 2016-06-07 10:40:23 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 122.31.25.186 at 2016-06-07 10:40:23 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 122.31.25.186 at 2016-06-07 10:40:23 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 122.31.25.186 at 2016-06-07 10:40:23 +0000
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 122.31.25.186 at 2016-06-07 10:40:23 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 122.31.25.186 at 2016-06-07 10:40:23 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 122.31.25.186 at 2016-06-07 10:40:23 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 122.31.25.186 at 2016-06-07 10:40:23 +0000
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:40:25 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:40:25 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 58ms (Views: 57.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:40:27 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:40:27 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:40:28 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:40:28 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 61ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:40:28 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:40:28 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:40:30 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:40:30 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:40:31 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:40:32 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:41:07 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for 122.31.25.186 at 2016-06-07 10:41:09 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 122.31.25.186 at 2016-06-07 10:41:09 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 57ms (Views: 56.4ms | ActiveRecord: 0.0ms)
