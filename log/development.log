@@ -7892,3 +7892,579 @@ Processing by WelcomeController#index as HTML
   [1m[36mEvent Load (0.4ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_time > '2016-06-10 17:09:29.778742')  ORDER BY "events"."start_time" ASC[0m
   Rendered welcome/index.html.erb within layouts/application (2.4ms)
 Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 10.240.0.136 at 2016-06-16 06:36:41 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE (start_time > '2016-06-16 06:36:41.662261')  ORDER BY "events"."start_time" ASC
+  Rendered welcome/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 880ms (Views: 833.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/auth/twitter" for 10.240.0.33 at 2016-06-16 06:36:45 +0000
+
+
+Started GET "/auth/twitter" for 10.240.0.214 at 2016-06-16 06:36:46 +0000
+
+
+Started GET "/auth/twitter/callback?oauth_token=bLoBwQAAAAAAvfD5AAABVVftJfY&oauth_verifier=CIjkwWxUFEWVNzojO0b6Q8r4ywtbS0lM" for 10.240.0.33 at 2016-06-16 06:36:49 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"bLoBwQAAAAAAvfD5AAABVVftJfY", "oauth_verifier"=>"CIjkwWxUFEWVNzojO0b6Q8r4ywtbS0lM", "provider"=>"twitter"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? LIMIT 1[0m  [["provider", "twitter"], ["uid", "146005103"]]
+Redirected to http://ruby-practice-ayasamind.c9users.io:8080/
+Completed 302 Found in 57ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 10.240.0.33 at 2016-06-16 06:36:50 +0000
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events" WHERE (start_time > '2016-06-16 06:36:50.850773')  ORDER BY "events"."start_time" ASC
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 63ms (Views: 61.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/new" for 10.240.0.33 at 2016-06-16 06:36:53 +0000
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/new.html.erb within layouts/application (103.4ms)
+Completed 200 OK in 207ms (Views: 155.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/events" for 10.240.0.33 at 2016-06-16 06:36:56 +0000
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WBN8tLA0vFHqALyJgb0WsNa2ShHWH5V92a8AyVnMC0xXjVP51lweX0drODvAzyk9oZmceyJ3jLOxr033EGP4Jw==", "event"=>{"name"=>"", "place"=>"", "start_time(1i)"=>"2016", "start_time(2i)"=>"6", "start_time(3i)"=>"16", "start_time(4i)"=>"15", "start_time(5i)"=>"36", "end_time(1i)"=>"2016", "end_time(2i)"=>"6", "end_time(3i)"=>"16", "end_time(4i)"=>"15", "end_time(5i)"=>"36", "content"=>""}, "commit"=>"作成"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 14ms
+
+NoMethodError (undefined method `savex' for #<Event:0x007f7081600fb0>
+Did you mean?  save
+               save!):
+  app/controllers/events_controller.rb:10:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (16.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (157.4ms)
+
+
+Started GET "/" for 10.240.0.211 at 2016-06-16 06:37:29 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE (start_time > '2016-06-16 06:37:29.984587')  ORDER BY "events"."start_time" ASC
+  Rendered welcome/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 580ms (Views: 528.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/events/new" for 10.240.0.212 at 2016-06-16 06:37:33 +0000
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/new.html.erb within layouts/application (78.4ms)
+Completed 200 OK in 367ms (Views: 148.4ms | ActiveRecord: 27.3ms)
+
+
+Started POST "/events" for 10.240.0.157 at 2016-06-16 06:37:36 +0000
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"19YzYVb4ejrCBkdsO3Xe6ngsbtsg0CvrJKjRkup/7c7YSBwsMJDYNG9tw956B+FnDwO4sdS4MiVMqJyso9AepQ==", "event"=>{"name"=>"", "place"=>"", "start_time(1i)"=>"2016", "start_time(2i)"=>"6", "start_time(3i)"=>"16", "start_time(4i)"=>"15", "start_time(5i)"=>"37", "end_time(1i)"=>"2016", "end_time(2i)"=>"6", "end_time(3i)"=>"16", "end_time(4i)"=>"15", "end_time(5i)"=>"37", "content"=>""}, "commit"=>"作成"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 12ms
+
+NoMethodError (undefined method `savex' for #<Event:0x007fbe65e93ad8>
+Did you mean?  save
+               save!):
+  app/controllers/events_controller.rb:10:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (13.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (122.9ms)
+
+
+Started POST "/events" for 10.240.0.157 at 2016-06-16 06:37:46 +0000
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"19YzYVb4ejrCBkdsO3Xe6ngsbtsg0CvrJKjRkup/7c7YSBwsMJDYNG9tw956B+FnDwO4sdS4MiVMqJyso9AepQ==", "event"=>{"name"=>"", "place"=>"", "start_time(1i)"=>"2016", "start_time(2i)"=>"6", "start_time(3i)"=>"16", "start_time(4i)"=>"15", "start_time(5i)"=>"37", "end_time(1i)"=>"2016", "end_time(2i)"=>"6", "end_time(3i)"=>"16", "end_time(4i)"=>"15", "end_time(5i)"=>"37", "content"=>""}, "commit"=>"作成"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 20ms
+
+NoMethodError (undefined method `savex' for #<Event:0x007fbe65d45640>
+Did you mean?  save
+               save!):
+  app/controllers/events_controller.rb:10:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (18.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (7.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (10.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (234.2ms)
+
+
+Started POST "/events" for 10.240.0.157 at 2016-06-16 06:39:00 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"19YzYVb4ejrCBkdsO3Xe6ngsbtsg0CvrJKjRkup/7c7YSBwsMJDYNG9tw956B+FnDwO4sdS4MiVMqJyso9AepQ==", "event"=>{"name"=>"", "place"=>"", "start_time(1i)"=>"2016", "start_time(2i)"=>"6", "start_time(3i)"=>"16", "start_time(4i)"=>"15", "start_time(5i)"=>"37", "end_time(1i)"=>"2016", "end_time(2i)"=>"6", "end_time(3i)"=>"16", "end_time(4i)"=>"15", "end_time(5i)"=>"37", "content"=>""}, "commit"=>"作成"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered events/new.html.erb within layouts/application (74.5ms)
+Completed 200 OK in 611ms (Views: 461.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.33 at 2016-06-16 06:39:02 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 10.240.0.240 at 2016-06-16 06:39:02 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 10.240.0.212 at 2016-06-16 06:39:02 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.211 at 2016-06-16 06:39:02 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 10.240.0.213 at 2016-06-16 06:39:02 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.230 at 2016-06-16 06:39:02 +0000
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.136 at 2016-06-16 06:39:02 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.240.0.157 at 2016-06-16 06:39:02 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.136 at 2016-06-16 06:39:02 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.213 at 2016-06-16 06:39:02 +0000
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.214 at 2016-06-16 06:39:02 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.136 at 2016-06-16 06:39:02 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 10.240.0.211 at 2016-06-16 06:39:02 +0000
+
+
+Started POST "/events" for 10.240.0.33 at 2016-06-16 06:39:28 +0000
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lKcLQ5wwdNmK7itSZzKotgfBaNFgO4T/fBHVYQFqWfGbOSQO+ljW1yeFr+AmQJc7cO6+u5RTnTEUEZhfSMWqmg==", "event"=>{"name"=>"いとしまクラフトフェス", "place"=>"志摩中央公園", "start_time(1i)"=>"2016", "start_time(2i)"=>"6", "start_time(3i)"=>"16", "start_time(4i)"=>"15", "start_time(5i)"=>"37", "end_time(1i)"=>"2016", "end_time(2i)"=>"6", "end_time(3i)"=>"16", "end_time(4i)"=>"16", "end_time(5i)"=>"37", "content"=>"クラフト売ります。"}, "commit"=>"作成"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "events" ("content", "created_at", "end_time", "name", "owner_id", "place", "start_time", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["content", "クラフト売ります。"], ["created_at", "2016-06-16 06:39:28.065084"], ["end_time", "2016-06-16 07:37:00.000000"], ["name", "いとしまクラフトフェス"], ["owner_id", 1], ["place", "志摩中央公園"], ["start_time", "2016-06-16 06:37:00.000000"], ["updated_at", "2016-06-16 06:39:28.065084"]]
+  [1m[35m (13.3ms)[0m  commit transaction
+Redirected to http://ruby-practice-ayasamind.c9users.io:8080/events/5
+Completed 302 Found in 96ms (ActiveRecord: 14.6ms)
+
+
+Started GET "/events/5" for 10.240.0.136 at 2016-06-16 06:39:28 +0000
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mEvent Load (2.5ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/show.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 98ms (Views: 87.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 10.240.0.212 at 2016-06-16 06:39:34 +0000
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events" WHERE (start_time > '2016-06-16 06:39:34.287391')  ORDER BY "events"."start_time" ASC
+  Rendered welcome/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 111ms (Views: 109.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/5/edit" for 10.240.0.136 at 2016-06-16 06:39:44 +0000
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (0.3ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."owner_id" = ? AND "events"."id" = ? LIMIT 1  [["owner_id", 1], ["id", 5]]
+  Rendered events/edit.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 86ms (Views: 79.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.240.0.214 at 2016-06-16 06:39:53 +0000
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_time > '2016-06-16 06:39:53.039928')  ORDER BY "events"."start_time" ASC[0m
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 59ms (Views: 57.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/new" for 10.240.0.33 at 2016-06-16 06:39:56 +0000
+Processing by EventsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered events/new.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 165ms (Views: 161.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/events" for 10.240.0.211 at 2016-06-16 06:40:08 +0000
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bqyh+1ujTNx0tXH8C2NwPqa3EI89hnUmOH8e/dW9s2thMo62Pcvu0tne9U5KEU+z0ZjG5cnubOhQf1PDnBJAAA==", "event"=>{"name"=>"あああ", "place"=>"あああ", "start_time(1i)"=>"2016", "start_time(2i)"=>"6", "start_time(3i)"=>"16", "start_time(4i)"=>"15", "start_time(5i)"=>"39", "end_time(1i)"=>"2016", "end_time(2i)"=>"6", "end_time(3i)"=>"16", "end_time(4i)"=>"22", "end_time(5i)"=>"39", "content"=>"いいい"}, "commit"=>"作成"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "events" ("content", "created_at", "end_time", "name", "owner_id", "place", "start_time", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["content", "いいい"], ["created_at", "2016-06-16 06:40:08.751821"], ["end_time", "2016-06-16 13:39:00.000000"], ["name", "あああ"], ["owner_id", 1], ["place", "あああ"], ["start_time", "2016-06-16 06:39:00.000000"], ["updated_at", "2016-06-16 06:40:08.751821"]]
+  [1m[35m (13.2ms)[0m  commit transaction
+Redirected to http://ruby-practice-ayasamind.c9users.io:8080/events/6
+Completed 302 Found in 191ms (ActiveRecord: 14.6ms)
+
+
+Started GET "/events/6" for 10.240.0.211 at 2016-06-16 06:40:08 +0000
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 70ms (Views: 67.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 10.240.0.214 at 2016-06-16 06:40:12 +0000
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE (start_time > '2016-06-16 06:40:12.308627')  ORDER BY "events"."start_time" ASC
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 65ms (Views: 62.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.240.0.212 at 2016-06-16 06:42:07 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events" WHERE (start_time > '2016-06-16 06:42:08.394791')  ORDER BY "events"."start_time" ASC
+  Rendered welcome/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 540ms (Views: 484.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.157 at 2016-06-16 06:42:09 +0000
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.157 at 2016-06-16 06:42:09 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 10.240.0.33 at 2016-06-16 06:42:09 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.136 at 2016-06-16 06:42:09 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 10.240.0.213 at 2016-06-16 06:42:09 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.214 at 2016-06-16 06:42:09 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 10.240.0.157 at 2016-06-16 06:42:09 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.240.0.214 at 2016-06-16 06:42:09 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.157 at 2016-06-16 06:42:09 +0000
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.213 at 2016-06-16 06:42:09 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.136 at 2016-06-16 06:42:09 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.214 at 2016-06-16 06:42:09 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 10.240.0.157 at 2016-06-16 06:42:09 +0000
+
+
+Started GET "/" for 10.240.0.214 at 2016-06-16 06:42:45 +0000
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.4ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_time > '2016-06-16 06:42:45.579453')  ORDER BY "events"."start_time" ASC[0m
+  Rendered welcome/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 213ms (Views: 210.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.240 at 2016-06-16 06:42:45 +0000
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.240 at 2016-06-16 06:42:46 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 10.240.0.33 at 2016-06-16 06:42:46 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 10.240.0.213 at 2016-06-16 06:42:46 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.157 at 2016-06-16 06:42:46 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 10.240.0.136 at 2016-06-16 06:42:46 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.230 at 2016-06-16 06:42:46 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.240.0.240 at 2016-06-16 06:42:46 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.240 at 2016-06-16 06:42:46 +0000
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.33 at 2016-06-16 06:42:46 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.240 at 2016-06-16 06:42:46 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.213 at 2016-06-16 06:42:46 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 10.240.0.136 at 2016-06-16 06:42:46 +0000
+
+
+Started GET "/" for 10.240.0.214 at 2016-06-16 06:42:48 +0000
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE (start_time > '2016-06-16 06:42:48.060670')  ORDER BY "events"."start_time" ASC
+  Rendered welcome/index.html.erb within layouts/application (78.4ms)
+Completed 200 OK in 134ms (Views: 131.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.240 at 2016-06-16 06:42:48 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.230 at 2016-06-16 06:42:48 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 10.240.0.212 at 2016-06-16 06:42:48 +0000
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.157 at 2016-06-16 06:42:48 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 10.240.0.213 at 2016-06-16 06:42:48 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.214 at 2016-06-16 06:42:48 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 10.240.0.230 at 2016-06-16 06:42:48 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.240.0.157 at 2016-06-16 06:42:48 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.214 at 2016-06-16 06:42:48 +0000
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.157 at 2016-06-16 06:42:48 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.212 at 2016-06-16 06:42:48 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.214 at 2016-06-16 06:42:48 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 10.240.0.157 at 2016-06-16 06:42:48 +0000
+
+
+Started GET "/" for 10.240.0.213 at 2016-06-16 06:43:29 +0000
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_time > '2016-06-16 06:43:29.354122')  ORDER BY "events"."start_time" ASC[0m
+  Rendered welcome/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 69ms (Views: 66.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.33 at 2016-06-16 06:43:29 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.33 at 2016-06-16 06:43:29 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 10.240.0.230 at 2016-06-16 06:43:29 +0000
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.214 at 2016-06-16 06:43:29 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.212 at 2016-06-16 06:43:29 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 10.240.0.157 at 2016-06-16 06:43:29 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 10.240.0.213 at 2016-06-16 06:43:29 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.240.0.230 at 2016-06-16 06:43:29 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.214 at 2016-06-16 06:43:29 +0000
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.213 at 2016-06-16 06:43:29 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.230 at 2016-06-16 06:43:29 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.33 at 2016-06-16 06:43:29 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 10.240.0.214 at 2016-06-16 06:43:29 +0000
+
+
+Started GET "/" for 10.240.0.240 at 2016-06-16 06:43:32 +0000
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events" WHERE (start_time > '2016-06-16 06:43:32.510093')  ORDER BY "events"."start_time" ASC
+  Rendered welcome/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 58ms (Views: 55.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 10.240.0.157 at 2016-06-16 06:43:34 +0000
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_time > '2016-06-16 06:43:34.146915')  ORDER BY "events"."start_time" ASC[0m
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 50ms (Views: 48.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logout" for 10.240.0.212 at 2016-06-16 06:43:36 +0000
+Processing by SessionsController#destroy as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io:8080/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.212 at 2016-06-16 06:43:36 +0000
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events" WHERE (start_time > '2016-06-16 06:43:36.556877')  ORDER BY "events"."start_time" ASC
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 10.240.0.33 at 2016-06-16 06:43:40 +0000
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_time > '2016-06-16 06:43:40.547793')  ORDER BY "events"."start_time" ASC[0m
+  Rendered welcome/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 50ms (Views: 48.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.157 at 2016-06-16 06:43:40 +0000
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.157 at 2016-06-16 06:43:40 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 10.240.0.230 at 2016-06-16 06:43:40 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.214 at 2016-06-16 06:43:40 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 10.240.0.240 at 2016-06-16 06:43:40 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.211 at 2016-06-16 06:43:40 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 10.240.0.33 at 2016-06-16 06:43:40 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.240.0.157 at 2016-06-16 06:43:40 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.213 at 2016-06-16 06:43:40 +0000
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.230 at 2016-06-16 06:43:40 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.214 at 2016-06-16 06:43:40 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.213 at 2016-06-16 06:43:40 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 10.240.0.240 at 2016-06-16 06:43:40 +0000
+
+
+Started GET "/events/new" for 10.240.0.230 at 2016-06-16 06:43:43 +0000
+Processing by EventsController#new as HTML
+Redirected to http://ruby-practice-ayasamind.c9users.io:8080/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.240 at 2016-06-16 06:43:43 +0000
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events" WHERE (start_time > '2016-06-16 06:43:43.756386')  ORDER BY "events"."start_time" ASC
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 54ms (Views: 52.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/auth/twitter" for 10.240.0.212 at 2016-06-16 06:43:46 +0000
+
+
+Started GET "/auth/twitter" for 10.240.0.136 at 2016-06-16 06:43:47 +0000
+
+
+Started GET "/auth/twitter/callback?oauth_token=m-rwcgAAAAAAvfD5AAABVVfzkRc&oauth_verifier=av3Q9swnL4Zu52Wk8v9yuWaUPBZXVTzi" for 10.240.0.230 at 2016-06-16 06:43:49 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"m-rwcgAAAAAAvfD5AAABVVfzkRc", "oauth_verifier"=>"av3Q9swnL4Zu52Wk8v9yuWaUPBZXVTzi", "provider"=>"twitter"}
+  [1m[36mUser Load (3.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? LIMIT 1[0m  [["provider", "twitter"], ["uid", "146005103"]]
+Redirected to http://ruby-practice-ayasamind.c9users.io:8080/
+Completed 302 Found in 54ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 10.240.0.240 at 2016-06-16 06:43:51 +0000
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE (start_time > '2016-06-16 06:43:51.601254')  ORDER BY "events"."start_time" ASC
+  Rendered welcome/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 88ms (Views: 85.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.240.0.240 at 2016-06-16 06:43:55 +0000
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.6ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_time > '2016-06-16 06:43:55.552226')  ORDER BY "events"."start_time" ASC[0m
+  Rendered welcome/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 65ms (Views: 62.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.33 at 2016-06-16 06:43:55 +0000
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.240 at 2016-06-16 06:43:55 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.211 at 2016-06-16 06:43:55 +0000
+
+
+Started GET "/assets/application.self-baad7cc5aaabe39a05438aad79a8eddc0627b760122f9e7277549906cf6650af.css?body=1" for 10.240.0.230 at 2016-06-16 06:43:55 +0000
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.214 at 2016-06-16 06:43:56 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 10.240.0.157 at 2016-06-16 06:43:56 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 10.240.0.212 at 2016-06-16 06:43:56 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.240.0.211 at 2016-06-16 06:43:56 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.33 at 2016-06-16 06:43:56 +0000
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.230 at 2016-06-16 06:43:56 +0000
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.214 at 2016-06-16 06:43:56 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.157 at 2016-06-16 06:43:56 +0000
+
+
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 10.240.0.212 at 2016-06-16 06:43:56 +0000
